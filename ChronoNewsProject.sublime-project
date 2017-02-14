@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "E:\\wamp64\\www\\petManager"
 		}
 	]
 }

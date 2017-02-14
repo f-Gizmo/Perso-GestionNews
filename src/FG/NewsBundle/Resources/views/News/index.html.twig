@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Gestion News ChronoCarpe !</title>
-  </head>
-  <body>
-    <h1>{% if title is defined%} {{title}}{% else %}Gestion des News{% endif %}</h1>
-
-    <p>
-   {% if content is defined %} {{content}}<br/> id : {{id}} -  {%endif%} 
-    </p>
-
-  </body>
-</html>
+{% extends "FGMasterBundle:Default:index.html.twig" %}
+{% block Master_body %}
+	{% block index_news_title %}<h1>Liste des dernières news Chronocarpe</h1>{% endblock %}	
+{% endblock %}

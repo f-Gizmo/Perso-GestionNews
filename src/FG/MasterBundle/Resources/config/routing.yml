@@ -1,0 +1,3 @@
+fg_master_homepage:
+    path:     /
+    defaults: { _controller: FGMasterBundle:Default:index }
