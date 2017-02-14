@@ -1,0 +1,606 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Gest",
+				"GestionNewsBundle"
+			],
+			[
+				"ne",
+				"new"
+			],
+			[
+				"hr",
+				"href"
+			],
+			[
+				"rows",
+				"rows_low"
+			],
+			[
+				"clien",
+				"client_export"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"in",
+				"input\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/FG/NewsBundle/Controller/NewsController.php",
+			"settings":
+			{
+				"buffer_size": 704,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "NewsController.php"
+			}
+		},
+		{
+			"file": "src/FG/NewsBundle/Resources/config/routing.yml",
+			"settings":
+			{
+				"buffer_size": 618,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/FG/NewsBundle/Resources/views/News/index.html.twig",
+			"settings":
+			{
+				"buffer_size": 293,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/FG/NewsBundle/Resources/views/layout.html.twig",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"twi",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"symfon",
+				"Snippet: Symfony2 / Command / Command class"
+			],
+			[
+				"package",
+				"Install Package Control"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"",
+				"View: Toggle Menu"
+			],
+			[
+				"class",
+				"PHP Class browser: Open Browser"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sideb",
+				"Browse Mode: Left Sidebar"
+			],
+			[
+				"list",
+				"Plugin Development: Profile Events"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"brow",
+				"Browse Mode: Right Sidebar"
+			],
+			[
+				"bro",
+				"Browse Mode..."
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"add",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"news pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: Satisfy Dependencies",
+				"Package Control: Satisfy Dependencies"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/wamp64/www/ChronoNews",
+		"/E/wamp64/www/ChronoNews/app",
+		"/E/wamp64/www/ChronoNews/app/config",
+		"/E/wamp64/www/ChronoNews/src",
+		"/E/wamp64/www/ChronoNews/src/FG",
+		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle",
+		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources",
+		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/config",
+		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/views"
+	],
+	"file_history":
+	[
+		"/E/wamp64/www/ChronoNews/app/config/routing.yml",
+		"/E/wamp64/alias/gestionnews.conf",
+		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/config/routing.yml",
+		"/E/wamp64/www/ChronoNews/app/AppKernel.php",
+		"/E/wamp64/www/symfony/src/OC/PlatformBundle/Resources/config/routing.yml",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/Entity/News.php",
+		"/Y/WWW/www.chronocarpe.com/includes/languages/french/menu.js",
+		"/Y/WWW/www.chronocarpe.com/includes/application_top.php",
+		"/Y/WWW/www.chronocarpe.com/includes/header.php",
+		"/Y/WWW/www.chronocarpe.com/includes/languages/french/header_tags.php",
+		"/Y/WWW/www.chronocarpe.com/includes/languages/french/categories_menu.php",
+		"/Y/WWW/www.chronocarpe.com/includes/languages/french/catalogue.php",
+		"//SRV-CHRONO/ChronoLoisirs/TECHNIQUE/footer_email/francois.html",
+		"/C/Users/Mark12/Desktop/fr126453.php",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/Resources/config/routing.yml",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/Antispam/Antispam.php",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/Resources/views/GestionNews/viewNews.html.twig",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/Resources/views/GestionNews/listeNews.html.twig",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/Resources/views/GestionNews/index.html.twig",
+		"/E/wamp64/www/GestionNews/app/Resources/views/base.html.twig",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/Controller/DefaultController.php",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/Resources/config/services.yml",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/DependencyInjection/Configuration.php",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/DependencyInjection/GestionNewsExtension.php",
+		"/E/wamp64/www/GestionNews/var/cache/dev/appDevDebugProjectContainer.php",
+		"/E/wamp64/www/symfony/src/OC/PlatformBundle/DependencyInjection/OCPlatformExtension.php",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/GestionNewsBundle.php",
+		"/E/wamp64/www/symfony/src/OC/PlatformBundle/DependencyInjection/Configuration.php",
+		"/E/wamp64/www/GestionNews/app/AppKernel.php",
+		"/E/wamp64/www/GestionNews/app/config/routing.yml",
+		"/E/wamp64/www/GestionNews/src/GestionNewsBundle/Resources/views/Default/index.html.twig",
+		"/E/wamp64/www/GestionNews/src/Chrono/GestionNewsBundle/DependencyInjection/Configuration.php",
+		"/E/wamp64/www/GestionNews/src/Chrono/gestionNewsBundle/Resources/views/newsletters/indexbody.html.twig",
+		"/E/wamp64/www/GestionNews/src/Chrono/gestionNewsBundle/Controller/DefaultController.php",
+		"/E/wamp64/www/GestionNews/src/Chrono/GestionNewsBundle/DependencyInjection/ChronogestionNewsExtension.php",
+		"/E/wamp64/www/GestionNews/src/Chrono/GestionNewsBundle/Resources/views/newsletters/index.html.twig",
+		"/E/wamp64/www/GestionNews/src/Chrono/GestionNewsBundle/Resources/config/services.yml",
+		"/E/wamp64/www/GestionNews/src/Chrono/GestionNewsBundle/Resources/config/routing.yml",
+		"/E/wamp64/www/GestionNews/app/autoload.php",
+		"/E/wamp64/www/GestionNews/vendor/symfony/symfony/src/Symfony/Component/Debug/DebugClassLoader.php",
+		"/E/wamp64/www/GestionNews/app/config/config.yml",
+		"/E/wamp64/www/GestionNews/src/Chrono/GestionNewsBundle/ChronogestionNewsBundle.php",
+		"/E/wamp64/www/GestionNews/src/Chrono/gestionNewsBundle/Resources/views/newsletters/index.html.twig",
+		"/E/wamp64/www/GestionNews/src/Chrono/gestionNewsBundle/Resources/config/routing.yml",
+		"/E/wamp64/www/GestionNews/src/Chrono/gestionNewsBundle/Resources/views/index.html.twig",
+		"/E/wamp64/www/GestionNews/src/Chrono/gestionNewsBundle/ChronogestionNewsBundle.php",
+		"/E/wamp64/www/GestionNews/app/Resources/views/index.html.twig",
+		"/E/wamp64/www/GestionNews/src/Chrono/gestionNewsBundle/Resources/views/Default/index.html.twig",
+		"/E/wamp64/www/GestionNews/app/Resources/views/default/index.html.twig",
+		"/E/wamp64/www/GestionNews/src/Chrono/gestionNewsBundle/Resources/views/Default/indexbody.html.twig",
+		"/E/wamp64/www/symfony/composer.json",
+		"/E/wamp64/www/test/vendor/composer/autoload_namespaces.php",
+		"/E/wamp64/www/test/composer.json",
+		"/E/wamp64/www/test/vendor/autoload.php",
+		"/E/wamp64/www/symfony/src/OC/PlatformBundle/Resources/views/Advert/index.html.twig",
+		"/E/wamp64/www/symfony/src/OC/PlatformBundle/Controller/DefaultController.php",
+		"/E/wamp64/www/symfony/app/config/routing.yml",
+		"/E/wamp64/www/symfony/src/OC/PlatformBundle/Controller/AdvertController.php",
+		"/E/wamp64/www/symfony/tests/AppBundle/Controller/DefaultControllerTest.php",
+		"/E/wamp64/www/symfony/app/config/routing_dev.yml",
+		"/E/Chronocarpe/op/op_noel/en/strings.inc",
+		"/E/Chronocarpe/noel2016/uk/strings.inc",
+		"/Y/WWW/www.chronocarpe.com/adchrocarp/stats_low_stock.php",
+		"/Y/WWW/www.chronocarpe.com/adchrocarp/products.php",
+		"/E/Chronocarpe/noel2016/es/strings.inc",
+		"/E/Chronocarpe/noel2016/fr/strings.inc",
+		"/Y/WWW/www.chronocarpe.com/featured_products.php",
+		"/Y/WWW/www.chronocarpe.com/display_reco.php",
+		"/Y/WWW/www.chronocarpe.com/includes/modules/featured.php",
+		"/Y/WWW/www.chronocarpe.com/includes/modules/featured_listing.php",
+		"/Y/WWW/www.chronocarpe.com/includes/languages/french/index.php",
+		"/Y/WWW/www.chronocarpe.com/index.php",
+		"/Y/WWW/www.chronocarpe.com/includes/languages/french.php",
+		"/Y/WWW/www.chronocarpe.com/includes/modules/product_listing.php",
+		"/Y/WWW/www.chronocarpe.com/adchrocarp/customers_general.php",
+		"/Y/WWW/www.chronocarpe.com/adchrocarp/includes/languages/french/customers_general.php",
+		"/Y/WWW/www.chronocarpe.com/adchrocarp/includes/configure.php",
+		"/Y/WWW/www.chronocarpe.com/includes/configure.php",
+		"/Y/WWW/www.chronocarpe.com/adchrocarp/includes/languages/french/configuration.php",
+		"/Y/WWW/www.chronocarpe.com/adchrocarp/cron_notification.php",
+		"/Y/WWW/www.chronocarpe.com/style/mobile/upload/public.inc",
+		"/C/Users/Mark12/Desktop/test.php",
+		"/C/Users/Mark12/AppData/Roaming/Sublime Text 3/Packages/Function Name Display/Function Name Display.sublime-settings",
+		"/Y/WWW/www.chronocarpe.com/checkout_shipping.php",
+		"/C/Users/Mark12/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\n        ",
+			"use",
+			">\n",
+			"lignes",
+			"menu",
+			"\n\t",
+			"\t\n",
+			"Gestion",
+			"gestionNewsBundle",
+			"twig",
+			"horsstock",
+			"horsstoc",
+			"horsstoc\n",
+			"*",
+			"horstock",
+			"rows",
+			"contentHeader",
+			"$row",
+			"products_dispo",
+			"select",
+			"pack",
+			"statu",
+			"    \n",
+			"stock_recorder_level",
+			"tep_products",
+			"flash",
+			"featured_id",
+			"flashVenteBeforePage",
+			"include",
+			"flashVenteBeforePage",
+			"include",
+			"require",
+			"pr&eacute;commande",
+			"commande",
+			"TEXT_DISPO_INTRO_YES_2",
+			"general",
+			"messageStack",
+			"');\n",
+			"customers_id",
+			"data_controls",
+			"define('EXPORT_NEWS_UNDER_TITRE_ES','<strong>Export Pour Newsletter </strong><br/>Civilite, nom, prenom, email; filtre sur news oui et language \"es\"');\n",
+			"\"');\n",
+			"EXPORT_TITRE",
+			"data_control",
+			";\n",
+			"newsletter",
+			"();\n",
+			"loginContent",
+			"PPC_SHIPPING",
+			"ORDERPC",
+			"checkout_shipping"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/FG/NewsBundle/Controller/NewsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								648,
+								648
+							]
+						],
+						"settings":
+						{
+							"auto_name": "NewsController.php",
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/FG/NewsBundle/Resources/config/routing.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								284
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/FG/NewsBundle/Resources/views/News/index.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								165,
+								165
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/FG/NewsBundle/Resources/views/layout.html.twig",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP-Twig/Syntaxes/HTML (Twig).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 442.0
+	},
+	"pinned_build_system": "",
+	"project": "ChronoNewsProject.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"sitamet",
+				"zaLorem ipsum dolor sit amet, consectetur adipisic"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 58.0,
+		"last_filter": "at",
+		"selected_items":
+		[
+			[
+				"at",
+				"attaque"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

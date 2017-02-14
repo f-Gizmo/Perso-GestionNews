@@ -1,0 +1,3 @@
+fg_news:
+    resource: "@FGNewsBundle/Resources/config/routing.yml"
+    prefix:   /news/

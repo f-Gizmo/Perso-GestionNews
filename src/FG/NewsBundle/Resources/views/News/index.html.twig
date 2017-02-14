@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gestion News ChronoCarpe !</title>
+  </head>
+  <body>
+    <h1>{% if title is defined%} {{title}}{% else %}Gestion des News{% endif %}</h1>
+
+    <p>
+   {% if content is defined %} {{content}}<br/> id : {{id}} -  {%endif%} 
+    </p>
+
+  </body>
+</html>
