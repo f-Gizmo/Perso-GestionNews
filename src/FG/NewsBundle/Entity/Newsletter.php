@@ -3,7 +3,7 @@
 namespace FG\NewsBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Newsletter
  *
@@ -25,6 +25,7 @@ class Newsletter
      * @var \DateTime
      *
      * @ORM\Column(name="date", type="date")
+     * @Assert\DateTime()
      */
     private $date;
 
@@ -32,6 +33,7 @@ class Newsletter
      * @var string
      *
      * @ORM\Column(name="title", type="string", length=255)
+     * @Assert\Length(min=10)
      */
     private $title;
 
@@ -52,7 +54,7 @@ class Newsletter
     /**
      * @var string
      *
-     * @ORM\Column(name="commentaire", type="string", length=255)
+     * @ORM\Column(name="commentaire", type="text", length=255)
      */
     private $commentaire;
 
