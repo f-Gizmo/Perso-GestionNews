@@ -7,10 +7,13 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use FG\NewsBundle\Entity\Newsletter;
 use FG\NewsBundle\Form\NewsletterType;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 class NewsController extends Controller
 {
-
+	/**
+	*@security ("has_role('ROLE_AUTEUR')")
+	*/
 	public function indexAction()
 	{		
 		return $this->render('FGNewsBundle:News:index.html.twig');
