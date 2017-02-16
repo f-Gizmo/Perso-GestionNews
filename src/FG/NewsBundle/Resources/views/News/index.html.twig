@@ -1,7 +1,7 @@
 {% extends "FGMasterBundle:Default:index.html.twig" %}
 {% block Master_body %}
-	{% for flashMessage in app.session.flashbag.get('Info') %}
-		<div> {{Info}} </div>
-	{% endfor %}
+    {% for flashMessage in app.session.flashbag.get('info') %}
+              <div>{{flashMessage}}</div>
+         {% endfor %}
 	{% block index_news_title %}<h1>Liste des dernières news Chronocarpe</h1>{% endblock %}	
 {% endblock %}

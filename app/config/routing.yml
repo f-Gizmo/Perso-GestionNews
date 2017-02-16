@@ -5,3 +5,13 @@ fg_master:
 fg_news:
     resource: "@FGNewsBundle/Resources/config/routing.yml"
     prefix:   /news/
+login:
+  path: /login
+  defaults: 
+      _controller: FGUserBundle:Security:login
+
+login_check:
+  path: /login_check
+
+logout:
+  path: /logout

@@ -1,0 +1,16 @@
+{% extends "FGMasterBundle:Default:index.html.twig" %}
+
+{% block Master_body %}
+	{% if error %}
+		<div class="alert alert-danger" > {{ error.message }} </div>
+	{% endif %}
+	<H1> identification</H1>
+	<form method="post" action="{{ path('login_check') }}">
+		<label for="username">Login : </label>
+		<input type="text" id="username" name="_username" value="{{last_username}}"/><br/>
+		<label for="password">Mot de passe : </label>
+		<input type="password" id="password" name="_password" />
+		<br/>
+		<input type="submit" name="Connexion">
+	</form>
+{% endblock %}

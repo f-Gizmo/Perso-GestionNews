@@ -30,6 +30,9 @@ class NewsController extends Controller
 
 		
 	}
+	/**
+	* @security("has_role('ROLE_ADMIN')")
+	*/
 	public function addAction (Request $request)
 	{
 		$news = new Newsletter;
@@ -42,7 +45,7 @@ class NewsController extends Controller
 				$em->persist($news);
 				$em->flush();
 
-				$request->getSessions()->getFlashBag()->add('Info', 'Ajout de l\'enregistrement Newsletter');
+				$request->getSession()->getFlashBag()->add('info', 'Ajout de l\'enregistrement Newsletter');
 				return $this->redirectToRoute('fg_news_homepage');
 			}
 		}
