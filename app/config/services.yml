@@ -7,3 +7,12 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+    info_html_adder:
+        class: FG\MasterBundle\Info\InfoHTMLAdder
+    info_listener:
+        class: FG\MasterBundle\Info\InfoListener
+        arguments:
+        - "@info_html_adder"
+        - "2017-12-31"
+        tags:
+          - { name: kernel.event_listener, event: kernel.response, method: proccesInfo}
