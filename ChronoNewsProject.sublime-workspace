@@ -40,49 +40,76 @@
 	"buffers":
 	[
 		{
-			"file": "src/FG/MasterBundle/Resources/views/Default/index.html.twig",
+			"contents": "<?php\n\nnamespace FG\\MasterBundle\\Info;\n\nuse Symfony\\Component\\HttpFoundation\\Response;\n\n\nclass InfoHTMLAdder \n{\n\tpublic function addInfo (Response $response)\n\t{\n\t\t$content = $response->getContent();\n\n\t\t$html='<div class=\"info\"> Information général sur le site géré par un listener sur le kernel response  </div>';\n\n\t\t$content= str_replace('<body>','<body>'.$html, $content);\n\t\t$response->setContent($content);\n\n\t\treturn $response;\n\t\t\t}\t\n}",
+			"file": "src/FG/MasterBundle/Info/InfoHTMLAdder.php",
+			"file_size": 460,
+			"file_write_time": 131318112571122048,
 			"settings":
 			{
-				"buffer_size": 1453,
+				"buffer_size": 438,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/FG/MasterBundle/Resources/config/routing.yml",
+			"settings":
+			{
+				"buffer_size": 96,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/FG/NewsBundle/Controller/NewsController.php",
+			"file": "app/config/routing.yml",
 			"settings":
 			{
-				"buffer_size": 1320,
+				"buffer_size": 318,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "app/config/security.yml",
 			"settings":
 			{
-				"buffer_size": 1356,
-				"encoding": "UTF-8",
+				"buffer_size": 1698,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "fg_master_homepage:\n    path:     /\n    defaults: { _controller: FGMasterBundle:Default:index }\nfg_master_login:\n    path: /login\n",
-			"file": "src/FG/MasterBundle/Resources/config/routing.yml",
-			"file_size": 96,
-			"file_write_time": 131315497846541154,
+			"file": "src/FG/UserBundle/Repository/UserRepository.php",
 			"settings":
 			{
-				"buffer_size": 130,
+				"buffer_size": 235,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/FG/NewsBundle/Entity/Newsletter.php",
+			"file": "src/FG/MasterBundle/Resources/config/services.yml",
 			"settings":
 			{
-				"buffer_size": 3014,
+				"buffer_size": 140,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<?php\n\nnamespace FG\\MasterBundle\\Info;\n\nuse Symfony\\Component\\HttpFoundation\\Response;\nuse Symfony\\Component\\HttpKernel\\Event\\FilterResponseEvent;\n\nclass InfoListener{\n\n\tprotected $infoHTML;\n\tprotected $endDate;\n\n\tpublic function __construct(InfoHTMLAdder $infoHTML, $endDate)\n\t{\n\t\t$this->infoHTML = $infoHTML;\n\t\t$this->endDate = new \\Datetime($endDate);\n\t}\n\n\tpublic function proccesInfo(FilterResponseEvent $event)\n\t{\n\t\t  if (!$event->isMasterRequest()) {\n      return;\n    }\n\t\t$restant = $this->endDate->diff(new \\datetime())->days;\n\n\t\tif ($restant<= 0) {\n\t\t\treturn;\n\t\t}\n\n\t\t$response = $this->infoHTML->addInfo($event->getResponse());\n\t\t$event->setResponse($response);\n\t}\n}",
+			"file": "src/FG/MasterBundle/Info/InfoListener.php",
+			"file_size": 707,
+			"file_write_time": 131318114201665970,
+			"settings":
+			{
+				"buffer_size": 675,
 				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/config/services.yml",
+			"settings":
+			{
+				"buffer_size": 310,
 				"line_ending": "Unix"
 			}
 		}
@@ -223,40 +250,43 @@
 		"/E/wamp64/www/ChronoNews",
 		"/E/wamp64/www/ChronoNews/app",
 		"/E/wamp64/www/ChronoNews/app/config",
-		"/E/wamp64/www/ChronoNews/app/Resources",
-		"/E/wamp64/www/ChronoNews/app/Resources/views",
 		"/E/wamp64/www/ChronoNews/app/Resources/views/default",
 		"/E/wamp64/www/ChronoNews/src",
 		"/E/wamp64/www/ChronoNews/src/FG",
-		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle",
+		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Controller",
 		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Resources",
 		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Resources/config",
-		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Resources/views",
-		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Resources/views/Default",
-		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle",
-		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Controller",
-		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Entity",
-		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Form",
-		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources",
 		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/config",
 		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/views",
-		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/views/News"
+		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/views/News",
+		"/E/wamp64/www/ChronoNews/src/FG/UserBundle",
+		"/E/wamp64/www/ChronoNews/src/FG/UserBundle/Controller",
+		"/E/wamp64/www/ChronoNews/src/FG/UserBundle/Repository",
+		"/E/wamp64/www/ChronoNews/src/FG/UserBundle/Resources/config",
+		"/E/wamp64/www/ChronoNews/src/FG/UserBundle/Resources/views/Security"
 	],
 	"file_history":
 	[
+		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Info/InfoListener.php",
+		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Info/InfoHTMLAdder.php",
+		"/E/wamp64/www/ChronoNews/app/config/services.yml",
+		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Controller/InfoHTMLAdder.php",
+		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Controller/infoHTMLAdder.php",
+		"/E/wamp64/www/ChronoNews/app/config/security.yml",
+		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Resources/views/Default/index.html.twig",
+		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Controller/NewsController.php",
+		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Entity/Newsletter.php",
+		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Resources/config/routing.yml",
 		"/E/wamp64/www/ChronoNews/.git/.COMMIT_EDITMSG.swp",
 		"/E/wamp64/www/ChronoNews/.git/COMMIT_EDITMSG",
 		"/E/wamp64/www/ChronoNews/.git/config",
 		"/E/wamp64/www/ChronoNews/app/config/routing.yml",
 		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Controller/DefaultController.php",
-		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Resources/views/Default/index.html.twig",
 		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/views/News/index.html.twig",
-		"/E/wamp64/www/ChronoNews/src/FG/MasterBundle/Resources/config/routing.yml",
 		"/E/wamp64/www/ChronoNews/app/config/config.yml",
 		"/E/wamp64/www/petManager/.git/config",
 		"/E/wamp64/www/petManager/.git/HEAD",
 		"/E/wamp64/www/ChronoNews/app/config/parameters.yml",
-		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Controller/NewsController.php",
 		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/config/routing.yml",
 		"/E/wamp64/www/ChronoNews/src/FG/NewsBundle/Resources/views/layout.html.twig",
 		"/E/wamp64/alias/gestionnews.conf",
@@ -359,6 +389,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<?",
 			"   \n",
 			"\n        ",
 			"use",
@@ -433,26 +464,52 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/FG/MasterBundle/Resources/views/Default/index.html.twig",
+					"file": "src/FG/MasterBundle/Info/InfoHTMLAdder.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1453,
+						"buffer_size": 438,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1017,
-								1017
+								87,
+								87
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Twig/Syntaxes/HTML (Twig).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/FG/MasterBundle/Resources/config/routing.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 96,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								96,
+								96
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -462,20 +519,134 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "src/FG/NewsBundle/Controller/NewsController.php",
+					"buffer": 2,
+					"file": "app/config/routing.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1320,
+						"buffer_size": 318,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								333,
-								333
+								294,
+								294
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/config/security.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1698,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/FG/UserBundle/Repository/UserRepository.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/FG/MasterBundle/Resources/config/services.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/FG/MasterBundle/Info/InfoListener.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 675,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								658,
+								658
 							]
 						],
 						"settings":
@@ -487,95 +658,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/config/security.yml",
+					"buffer": 7,
+					"file": "app/config/services.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1356,
+						"buffer_size": 310,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								581,
-								581
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/YAML/YAML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 140.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "src/FG/MasterBundle/Resources/config/routing.yml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 130,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								129,
-								129
+								310,
+								310
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/YAML/YAML.sublime-syntax"
 						},
-						"translation.x": 0.0,
+						"translation.x": 38.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/FG/NewsBundle/Entity/Newsletter.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3014,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								39,
-								39
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 11.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
